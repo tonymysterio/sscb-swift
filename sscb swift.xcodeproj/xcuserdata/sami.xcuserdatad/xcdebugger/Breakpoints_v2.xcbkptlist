@@ -6,15 +6,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "sscb swift/AppDelegate.swift"
-            timestampString = "549531204.510712"
+            timestampString = "549531666.368556"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "application(_:didFinishLaunchingWithOptions:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "sscb swift/AppDelegate.swift"
-            timestampString = "549531204.5111769"
+            timestampString = "549531666.36902"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "sscb swift/ssb-ref/ssb-ref.swift"
-            timestampString = "549531204.511487"
+            timestampString = "549531666.369359"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "sscb swift/ssb-ref/ssb-ref.swift"
-            timestampString = "549531204.5118411"
+            timestampString = "549531666.369769"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "sscb swift/ssb-ref/ssb-ref.swift"
-            timestampString = "549531204.512125"
+            timestampString = "549531666.370092"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "sscb swift/ssb-ref/ssb-ref.swift"
-            timestampString = "549531204.5123971"
+            timestampString = "549531666.3704"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
@@ -102,15 +102,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "sscb swift/AppDelegate.swift"
-            timestampString = "549531204.512664"
+            timestampString = "549531666.37068"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "application(_:didFinishLaunchingWithOptions:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "sscb swift/ssb-ref/ssb-ref.swift"
-            timestampString = "549531204.512943"
+            timestampString = "549531666.370953"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
@@ -159,6 +159,150 @@
                   startingLineNumber = "28"
                   endingLineNumber = "28"
                   offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "sscb swift/ssb-ref/ssb-ref.swift"
+            timestampString = "549531666.371236"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "isFeedId"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in sscb_swift):Swift.String.isFeedId.getter : Swift.Bool"
+                  moduleName = "sscb swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sami/Documents/sscb%20swift/sscb%20swift/ssb-ref/ssb-ref.swift"
+                  timestampString = "549531666.489952"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "760">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in sscb_swift):Swift.String.isFeedId.getter : Swift.Bool"
+                  moduleName = "sscb swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sami/Documents/sscb%20swift/sscb%20swift/ssb-ref/ssb-ref.swift"
+                  timestampString = "549531666.492473"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "1096">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "sscb swift/ssb-ref/ssb-ref.swift"
+            timestampString = "549531666.371507"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "isMsgId"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in sscb_swift):Swift.String.isMsgId.getter : Swift.Bool"
+                  moduleName = "sscb swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sami/Documents/sscb%20swift/sscb%20swift/ssb-ref/ssb-ref.swift"
+                  timestampString = "549531666.4998879"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "760">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in sscb_swift):Swift.String.isMsgId.getter : Swift.Bool"
+                  moduleName = "sscb swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sami/Documents/sscb%20swift/sscb%20swift/ssb-ref/ssb-ref.swift"
+                  timestampString = "549531666.502391"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "1096">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "sscb swift/ssb-ref/ssb-ref.swift"
+            timestampString = "549531666.371756"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "isBlobId"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in sscb_swift):Swift.String.isBlobId.getter : Swift.Bool"
+                  moduleName = "sscb swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sami/Documents/sscb%20swift/sscb%20swift/ssb-ref/ssb-ref.swift"
+                  timestampString = "549531666.50885"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "760">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in sscb_swift):Swift.String.isBlobId.getter : Swift.Bool"
+                  moduleName = "sscb swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sami/Documents/sscb%20swift/sscb%20swift/ssb-ref/ssb-ref.swift"
+                  timestampString = "549531666.511637"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "1096">
                </Location>
             </Locations>
          </BreakpointContent>

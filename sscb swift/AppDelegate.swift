@@ -21,13 +21,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //check if a string is a feed id
         let feed : ssbref = "@nUtgCIpqOsv6k5mnWKA4JeJVkJTd9Oz2gmv6rojQeXU=.ed25519"
+        let bb = feed.isFeedId
         
         //check if a string is a message id
         let msg : ssbref = "%MPB9vxHO0pvi2ve2wh6Do05ZrV7P6ZjUQ+IEYnzLfTs=.sha256"
+        let cc = msg.isMsgId
         
         //check if a string is a blob id
         let blob : ssbref = "&Pe5kTo/V/w4MToasp1IuyMrMcCkQwDOdyzbyD5fy4ac=.sha256"
-        
+        let dd = blob.isBlobId
         
         
         let gm : ssbref = "DIBDIB"

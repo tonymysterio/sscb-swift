@@ -53,7 +53,7 @@ extension ssbref {
     
     }
     
-    var isFeedID: Bool {
+    var isFeedId: Bool {
         
         let pattern = self as NSString
         
