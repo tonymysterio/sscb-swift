@@ -59,7 +59,7 @@ extension ssbref {
         
         // var feedIdRegex = exports.feedIdRegex = /^@[A-Za-z0-9\/+]{43}=\.(?:sha256|ed25519)$/
         
-        let feedIdRegex = try? NSRegularExpression(pattern: "/^@[A-Za-z0-9\\/+]{43}=\\.(?:sha256|ed25519)$/",options: .caseInsensitive)
+        let feedIdRegex = try? NSRegularExpression(pattern: "/^@[A-Za-z0-9\\/+]{43}=\\.(?:sha256|ed25519)$",options: .caseInsensitive)
         
         let matches = feedIdRegex?.matches(in: self, options: [], range: NSRange(location: 0, length: pattern.length)) .map {
             pattern.substring(with: $0.range)
@@ -76,7 +76,7 @@ extension ssbref {
         
         // var feedIdRegex = exports.feedIdRegex = /^@[A-Za-z0-9\/+]{43}=\.(?:sha256|ed25519)$/
         
-        let msgIdRegex = try? NSRegularExpression(pattern: "/^%[A-Za-z0-9\\/+]{43}=\\.sha256$/",options: .caseInsensitive)
+        let msgIdRegex = try? NSRegularExpression(pattern: "/^%[A-Za-z0-9\\/+]{43}=\\.sha256$",options: .caseInsensitive)
         
         let matches = msgIdRegex?.matches(in: self, options: [], range: NSRange(location: 0, length: pattern.length)) .map {
             pattern.substring(with: $0.range)
@@ -93,7 +93,7 @@ extension ssbref {
         
         // var feedIdRegex = exports.feedIdRegex = /^@[A-Za-z0-9\/+]{43}=\.(?:sha256|ed25519)$/
         
-        let blobIdRegex = try? NSRegularExpression(pattern: "/^&[A-Za-z0-9\\/+]{43}=\\.sha256$/",options: .caseInsensitive)
+        let blobIdRegex = try? NSRegularExpression(pattern: "/^&[A-Za-z0-9\\/+]{43}=\\.sha256$",options: .caseInsensitive)
         
         let matches = blobIdRegex?.matches(in: self, options: [], range: NSRange(location: 0, length: pattern.length)) .map {
             pattern.substring(with: $0.range)
@@ -104,7 +104,56 @@ extension ssbref {
         
     }
     
+    var extractRegex : ssbref? {
+        
+        let pattern = self as NSString
+        
+        // var feedIdRegex = exports.feedIdRegex = /^@[A-Za-z0-9\/+]{43}=\.(?:sha256|ed25519)$/
+        
+        let exRegex = try? NSRegularExpression(pattern: "/([@%&][A-Za-z0-9\\/+]{43}=\\.[\\w\\d]+)",options: .caseInsensitive)
+        
+        let matches = exRegex?.matches(in: self, options: [], range: NSRange(location: 0, length: pattern.length)) .map {
+            pattern.substring(with: $0.range)
+        }
+        
+        if (matches?.isEmpty)! { return nil }
+        
+        return matches![0];
+        
+    }
     
+    var extract : ssbref? {
+    
+        
+        guard let url = URL(string: self ) else {
+            return nil
+        }
+        
+        // extractRegex = /([@%&][A-Za-z0-9\/+]{43}=\.[\w\d]+)/
+        guard let res = self.extractRegex else {
+            return nil
+        }
+        /*
+        let url = NSURL(string: urlstring)
+        
+        
+    
+    var res = extractRegex.exec(_data)
+    if (res) {
+    return res && res[0]
+    } else {
+    try { _data = decodeURIComponent(data) }
+    catch (e) {} // this may fail if it's not encoded, so don't worry if it does
+    _data = _data.replace(/&amp;/g, '&')
+    
+    var res = extractRegex.exec(_data)
+    return res && res[0]
+    }
+    }
+    */
+        
+        return nil
+    }
     
 }
 

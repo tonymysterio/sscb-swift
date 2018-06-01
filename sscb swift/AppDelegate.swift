@@ -36,7 +36,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let b = gm.isLink
         
         //ref.isLink('%Lihvp+fMdt5CihjbOY6eZc0qCe0eKsrN2wfgXV2E3PM=.sha25s')
-        
+        let nub : ssbref = "http://localhost:7777/#/msg/%25pGzeEydYdHjKW1iIchR0Yumydsr3QSp8+FuYcwVwi8Q=.sha256?foo=bar"
+        //let nub : ssbref = "http://www.fi:7777/"
+        let bm = nub.extract
         return true
     }
 
