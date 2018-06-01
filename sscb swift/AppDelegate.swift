@@ -16,8 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let st : ssbref = "%Lihvp+fMdt5CihjbOY6eZc0qCe0eKsrN2wfgXV2E3PM=.sha25s"
-        let aa = st.isLink
+        let linku : ssbref = "%Lihvp+fMdt5CihjbOY6eZc0qCe0eKsrN2wfgXV2E3PM=.sha25s"
+        let aa = linku.isLink
+        
+        //check if a string is a feed id
+        let feed : ssbref = "@nUtgCIpqOsv6k5mnWKA4JeJVkJTd9Oz2gmv6rojQeXU=.ed25519"
+        
+        //check if a string is a message id
+        let msg : ssbref = "%MPB9vxHO0pvi2ve2wh6Do05ZrV7P6ZjUQ+IEYnzLfTs=.sha256"
+        
+        //check if a string is a blob id
+        let blob : ssbref = "&Pe5kTo/V/w4MToasp1IuyMrMcCkQwDOdyzbyD5fy4ac=.sha256"
+        
+        
+        
         let gm : ssbref = "DIBDIB"
         let b = gm.isLink
         

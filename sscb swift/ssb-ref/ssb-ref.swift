@@ -16,6 +16,26 @@ typealias ssbref = String
 
 extension ssbref {
     
+    var isHost: Bool {
+        //return ('string' === typeof addr && isIP(addr)) || isDomain(addr) || addr === 'localhost'
+        
+        return false
+        
+    }
+    
+    var isPort: Bool {
+        
+        guard let a:Int = Int(self) else { return false }
+        if (a > -1 || a < 65536) { return true }
+        
+        return false
+        
+    }
+    
+    
+
+    
+    
     var isLink: Bool { 
         
         let pattern = self as NSString
@@ -32,6 +52,59 @@ extension ssbref {
         return true;
     
     }
+    
+    var isFeedID: Bool {
+        
+        let pattern = self as NSString
+        
+        // var feedIdRegex = exports.feedIdRegex = /^@[A-Za-z0-9\/+]{43}=\.(?:sha256|ed25519)$/
+        
+        let feedIdRegex = try? NSRegularExpression(pattern: "/^@[A-Za-z0-9\\/+]{43}=\\.(?:sha256|ed25519)$/",options: .caseInsensitive)
+        
+        let matches = feedIdRegex?.matches(in: self, options: [], range: NSRange(location: 0, length: pattern.length)) .map {
+            pattern.substring(with: $0.range)
+        }
+        
+        if (matches?.isEmpty)! { return false }
+        return true;
+        
+    }
+    
+    var isMsgId: Bool {
+        
+        let pattern = self as NSString
+        
+        // var feedIdRegex = exports.feedIdRegex = /^@[A-Za-z0-9\/+]{43}=\.(?:sha256|ed25519)$/
+        
+        let msgIdRegex = try? NSRegularExpression(pattern: "/^%[A-Za-z0-9\\/+]{43}=\\.sha256$/",options: .caseInsensitive)
+        
+        let matches = msgIdRegex?.matches(in: self, options: [], range: NSRange(location: 0, length: pattern.length)) .map {
+            pattern.substring(with: $0.range)
+        }
+        
+        if (matches?.isEmpty)! { return false }
+        return true;
+        
+    }
+    
+    var isBlobId: Bool {
+        
+        let pattern = self as NSString
+        
+        // var feedIdRegex = exports.feedIdRegex = /^@[A-Za-z0-9\/+]{43}=\.(?:sha256|ed25519)$/
+        
+        let blobIdRegex = try? NSRegularExpression(pattern: "/^&[A-Za-z0-9\\/+]{43}=\\.sha256$/",options: .caseInsensitive)
+        
+        let matches = blobIdRegex?.matches(in: self, options: [], range: NSRange(location: 0, length: pattern.length)) .map {
+            pattern.substring(with: $0.range)
+        }
+        
+        if (matches?.isEmpty)! { return false }
+        return true;
+        
+    }
+    
+    
     
 }
 
