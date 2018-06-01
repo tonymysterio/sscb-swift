@@ -12,6 +12,7 @@
 		2606371420C108D9005C6ABA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2606371220C108D9005C6ABA /* Main.storyboard */; };
 		2606371620C108DB005C6ABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2606371520C108DB005C6ABA /* Assets.xcassets */; };
 		2606371920C108DB005C6ABA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2606371720C108DB005C6ABA /* LaunchScreen.storyboard */; };
+		2606372220C10920005C6ABA /* ssb-ref.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2606372120C10920005C6ABA /* ssb-ref.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		2606371520C108DB005C6ABA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2606371820C108DB005C6ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2606371A20C108DB005C6ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2606372120C10920005C6ABA /* ssb-ref.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ssb-ref.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		2606370D20C108D8005C6ABA /* sscb swift */ = {
 			isa = PBXGroup;
 			children = (
+				2606372020C10904005C6ABA /* ssb-ref */,
 				2606370E20C108D8005C6ABA /* AppDelegate.swift */,
 				2606371020C108D8005C6ABA /* ViewController.swift */,
 				2606371220C108D9005C6ABA /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				2606371A20C108DB005C6ABA /* Info.plist */,
 			);
 			path = "sscb swift";
+			sourceTree = "<group>";
+		};
+		2606372020C10904005C6ABA /* ssb-ref */ = {
+			isa = PBXGroup;
+			children = (
+				2606372120C10920005C6ABA /* ssb-ref.swift */,
+			);
+			path = "ssb-ref";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2606372220C10920005C6ABA /* ssb-ref.swift in Sources */,
 				2606371120C108D9005C6ABA /* ViewController.swift in Sources */,
 				2606370F20C108D8005C6ABA /* AppDelegate.swift in Sources */,
 			);
@@ -283,6 +295,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 86ZK99Q6D8;
 				INFOPLIST_FILE = "sscb swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 86ZK99Q6D8;
 				INFOPLIST_FILE = "sscb swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
