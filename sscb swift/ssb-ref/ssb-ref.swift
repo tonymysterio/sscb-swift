@@ -22,13 +22,13 @@ extension ssbref {
         
         ///^((@|%|&)[A-Za-z0-9\/+]{43}=\.[\w\d]+)(\?(.+))?$/
         
-        let linkRegex = try? NSRegularExpression(pattern: "/^(@|%|&)[A-Za-z0-9\\/+]{43}=\\.[\\w\\d]+$/",options: .caseInsensitive)
+        let linkRegex = try? NSRegularExpression(pattern: "^(@|%|&)[A-Za-z0-9\\/+]{43}=\\.[\\w\\d]+$",options: .caseInsensitive)
         
         let matches = linkRegex?.matches(in: self, options: [], range: NSRange(location: 0, length: pattern.length)) .map {
             pattern.substring(with: $0.range)
         }
         
-    
+        if (matches?.isEmpty)! { return false }
         return true;
     
     }
